@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="menu">
-    <h1 class="title">Valorant</h1>
+    <a href="./index.html" class="title">Valorant</a>
   </header>
 
   <main class="content">
@@ -18,8 +18,73 @@
         <img src="./assets/img/jeet.png" alt="jeet">
       </div>
       <div class="text">
-          <p class="title">Encontre seus agentes aqui</p>
-          <button id="button" onclick="getAgents()">Todos os agentes</button>
+          <p class="title">Search your agents over here</p>
+          <button id="button" onclick="getAgents()">show agents</button>
+          <form>
+            <p id="search">// Search by name</p>
+            <select name="agents" id="SelectByName">
+              <option value="#"></option>
+              <option value="Jett">Jett</option>
+              <option value="Gekko">Gekko</option>
+              <option value="Fade">Fade</option>
+              <option value="Breach">Breach</option>
+              <option value="Deadlock">Deadlock</option>
+              <option value="Raze">Raze</option>
+              <option value="Chamber">Chamber</option>
+              <option value="KAY/O">KAY/O</option>
+              <option value="Skye">Skye</option>
+              <option value="Cypher">Cypher</option>
+              <option value="Sova">Sova</option>
+              <option value="Killjoy">Killjoy</option>
+              <option value="Harbor">Harbor</option>
+              <option value="Viper">Viper</option>
+              <option value="Phoenix">Phoenix</option>
+              <option value="Astra">Astra</option>
+              <option value="Brimstone">Brimstone</option>
+              <option value="Iso">Iso</option>
+              <option value="Neon">Neon</option>
+              <option value="Yoru">Yoru</option>
+              <option value="Sage">Sage</option>
+              <option value="Reyna">Reyna</option>
+              <option value="Omen">Omen</option>
+            </select>
+          </form>
+          <button id="button" onclick="getAgentsByName()">Search</button>
+      </div>
+    </div>
+
+    <div class="agents weapons" >
+      <div class="img">
+        <img src="./assets/img/vandal.png" alt="jeet">
+      </div>
+      <div class="text">
+          <p class="title">Search all weapons over here</p>
+          <button id="button" onclick="getWeapons()">show weapons</button>
+          <form>
+            <p id="search">// Search by name</p>
+            <select name="agents" id="SelectWeaponByName">
+              <option value="#"></option>
+              <option value="Odin">Odin</option>
+              <option value="Ares">Ares</option>
+              <option value="Vandal">Vandal</option>
+              <option value="Breach">Breach</option>
+              <option value="Bulldog">Bulldog</option>
+              <option value="Phantom">Phantom</option>
+              <option value="Judge">Judge</option>
+              <option value="Bucky">Bucky</option>
+              <option value="Frenzy">Frenzy</option>
+              <option value="Classic">Classic</option>
+              <option value="Ghost">Ghost</option>
+              <option value="Sheriff">Sheriff</option>
+              <option value="Shorty">Shorty</option>
+              <option value="Operator">Operator</option>
+              <option value="Guardian">Guardian</option>
+              <option value="Marshal">Marshal</option>
+              <option value="Spectre">Spectre</option>
+              <option value="Stinger">Stinger</option>
+            </select>
+          </form>
+          <button id="button" onclick="getWeaponsByName()">Search</button>
       </div>
     </div>
 
