@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Oswald display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background: #ff4655;
+  width: 100%;
+}
+
+p[class="title"] {
+  font-size: 50px;
+}
+
+p {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+
+h1[class="title"] {
+  margin: 0 0 0 50px;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 40px;
+}
+
+#button {
+  width: 250px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ece8e1;
+  padding: 10px 20px;
+  background: #ff4655;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.title {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0e1922;
+  color: #ece8e1;
+}
+
+.agents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0;
+  border: groove 1px #ff4655;
+  width: 100%;
+}
+
+.img img {
+  height: 500;
+  width: 600px;
+}
+
+.img {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.text {
+  display:  flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 40%;
+  gap: 50px;
+}
+
