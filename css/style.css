@@ -75,6 +75,7 @@ a[id="link-button"]:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   color: #ece8e1;
   background: #dcd9d3;
 }
@@ -84,9 +85,9 @@ a[id="link-button"]:hover {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  width: 95%;
   padding: 10px 0;
   border: groove 1px #ff4655;
-  width: 100%;
   margin: 10px 0 0 0;
   background: #0e1922;
 
@@ -128,4 +129,27 @@ select {
   padding: 50px 0;
   display:  flex;
   gap: 60px;
+}
+
+footer {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0e1922;
+  background: #dcd9d3;
+  padding: 15vh 0 0 0;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  gap: 10px;
+}
+
+#git {
+  height: 25px;
+  width: 25px;
+}
+
+#linkedin {
+  height: 30px;
+  width: 30px;
 }

@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Valorant</title>
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/main.js"></script>
 </head>
-<body>
+<body onload="getOptions()">
   <header class="menu">
     <a href="./index.html" class="title">Valorant</a>
   </header>
@@ -23,30 +22,7 @@
           <form>
             <p id="search">// Search by name</p>
             <select name="agents" id="SelectByName">
-              <option value="#"></option>
-              <option value="Jett">Jett</option>
-              <option value="Gekko">Gekko</option>
-              <option value="Fade">Fade</option>
-              <option value="Breach">Breach</option>
-              <option value="Deadlock">Deadlock</option>
-              <option value="Raze">Raze</option>
-              <option value="Chamber">Chamber</option>
-              <option value="KAY/O">KAY/O</option>
-              <option value="Skye">Skye</option>
-              <option value="Cypher">Cypher</option>
-              <option value="Sova">Sova</option>
-              <option value="Killjoy">Killjoy</option>
-              <option value="Harbor">Harbor</option>
-              <option value="Viper">Viper</option>
-              <option value="Phoenix">Phoenix</option>
-              <option value="Astra">Astra</option>
-              <option value="Brimstone">Brimstone</option>
-              <option value="Iso">Iso</option>
-              <option value="Neon">Neon</option>
-              <option value="Yoru">Yoru</option>
-              <option value="Sage">Sage</option>
-              <option value="Reyna">Reyna</option>
-              <option value="Omen">Omen</option>
+              
             </select>
           </form>
           <button id="button" onclick="getAgentsByName()">Search</button>
@@ -63,31 +39,22 @@
           <form>
             <p id="search">// Search by name</p>
             <select name="agents" id="SelectWeaponByName">
-              <option value="#"></option>
-              <option value="Odin">Odin</option>
-              <option value="Ares">Ares</option>
-              <option value="Vandal">Vandal</option>
-              <option value="Breach">Breach</option>
-              <option value="Bulldog">Bulldog</option>
-              <option value="Phantom">Phantom</option>
-              <option value="Judge">Judge</option>
-              <option value="Bucky">Bucky</option>
-              <option value="Frenzy">Frenzy</option>
-              <option value="Classic">Classic</option>
-              <option value="Ghost">Ghost</option>
-              <option value="Sheriff">Sheriff</option>
-              <option value="Shorty">Shorty</option>
-              <option value="Operator">Operator</option>
-              <option value="Guardian">Guardian</option>
-              <option value="Marshal">Marshal</option>
-              <option value="Spectre">Spectre</option>
-              <option value="Stinger">Stinger</option>
+              
             </select>
           </form>
           <button id="button" onclick="getWeaponsByName()">Search</button>
       </div>
     </div>
-
   </main>
+
+  <footer class="footer">
+    <p>2023 © Todos os direitos reservados</p>
+    <p>|</p>
+    <a href="https://github.com/Szaboltz"><img id="git" src="./assets/img/github.png" alt="github"></a>
+    <a href="https://linkedin.com/in/henrique-szabo-741797256"><img id="linkedin" src="./assets/img/linkedin.png" alt="github"></a>
+  </footer>
+
 </body>
+
+<script src="./js/main.js"></script>
 </html>

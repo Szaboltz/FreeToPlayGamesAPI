@@ -1,3 +1,22 @@
+const getOptions = async () => {
+  const agentName = document.querySelector('#SelectByName');
+  const response = await fetch('https://valorant-api.com/v1/agents');
+  const data = await response.json();
+  const agentsArray = data.data.filter((agent) => agent.uuid != "ded3520f-4264-bfed-162d-b080e2abccf9")
+
+  agentsArray.map( (option) => {
+    agentName.innerHTML += `<option value="${option.displayName}">${option.displayName}</option>`
+  })
+
+  const weaponName = document.querySelector('#SelectWeaponByName');
+  const responseWeapons = await fetch('https://valorant-api.com/v1/weapons');
+  const dataWeapons = await responseWeapons.json();
+
+  dataWeapons.data.map( (option) => {
+    weaponName.innerHTML += `<option value="${option.displayName}">${option.displayName}</option>`
+  })
+}
+
 const getAgents = async () => {
   const main = document.querySelector('.content');
 
@@ -48,6 +67,10 @@ const getAgentsByName = async () => {
   // console.log(agentsArray)
 
   main.innerHTML = ''
+
+  agentsArray.map( (option) => {
+    agentName.innerHTML += `<option value="${option.displayName}"></option>`
+  })
 
   agentsArray.map((agent) => {
     if (agentName == agent.displayName) {
@@ -117,6 +140,8 @@ const getWeaponsByName = async () => {
 
   const response = await fetch('https://valorant-api.com/v1/weapons');
   const data = await response.json();
+
+  
 
   // console.log(data)
 
